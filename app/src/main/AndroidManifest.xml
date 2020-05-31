@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.store">
 
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".store">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".timer" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity"></activity>
+        <activity android:name=".timer_page" />
+        <activity android:name=".store2" />
+        <activity android:name=".win"/>
+        <activity android:name=".failed"/>
+        <activity android:name=".store3"></activity>
     </application>
 
 </manifest>
